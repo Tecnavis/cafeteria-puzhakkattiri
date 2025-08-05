@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+
+  <!-- Banner Section -->
+  <header class="banner">
+    <img src="./assets/images/Yellow and Red Modern Beef Burger Banner.png" alt="Restaurant Banner">
+  </header>
+
+  <!-- Action Buttons -->
+<div class="actions">
+  <button onclick="saveContact()">
+    <i class="fas fa-user-plus icon contact"></i><span>Save Contact</span>
+  </button>
+  <button onclick="downloadMenu()">
+    <i class="fas fa-file-download icon menu"></i><span>Download Menu</span>
+  </button>
+  <button onclick="shareWebsite()">
+    <i class="fas fa-share-alt icon share"></i><span>Share</span>
+  </button>
+  <button onclick="location.href='https://wa.me/91XXXXXXXXXX'">
+    <i class="fab fa-whatsapp icon whatsapp"></i><span>WhatsApp</span>
+  </button>
+  <button onclick="location.href='tel:+91XXXXXXXXXX'">
+    <i class="fas fa-phone icon phone"></i><span>Call Now</span>
+  </button>
+
+</div>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <!-- Menu Card 1 -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://source.unsplash.com/400x300/?sandwich" alt="Breakfast">
+          <div class="menu-price">$14.99</div>
+        </div>
+        <div class="menu-content">
+          <span class="menu-tag breakfast">Breakfast</span>
+          <h4>Artisan Breakfast Bowl</h4>
+        </div>
+      </div>
+
+      <!-- Menu Card 2 -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://source.unsplash.com/400x300/?salmon" alt="Lunch">
+          <div class="menu-price">$22.99</div>
+        </div>
+        <div class="menu-content">
+          <span class="menu-tag lunch">Lunch</span>
+          <h4>Grilled Salmon Delight</h4>
+        </div>
+      </div>
+
+      <!-- Menu Card 3 -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://source.unsplash.com/400x300/?coffee" alt="Coffee">
+          <div class="menu-price">$5.99</div>
+        </div>
+        <div class="menu-content">
+          <span class="menu-tag beverages">Beverages</span>
+          <h4>Signature Coffee Blend</h4>
+        </div>
+      </div>
+
+      <!-- Menu Card 4 -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://source.unsplash.com/400x300/?chocolate-cake" alt="Dessert">
+          <div class="menu-price">$8.99</div>
+        </div>
+        <div class="menu-content">
+          <span class="menu-tag desserts">Desserts</span>
+          <h4>Chocolate Lava Cake</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer class="footer">
+  <p>Created by <a href="https://www.tecnavis.in" target="_blank">Tecnavis</a> | All rights reserved © 2025</p>
+</footer>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
