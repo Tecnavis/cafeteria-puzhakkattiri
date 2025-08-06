@@ -17,23 +17,40 @@
 
   <!-- Action Buttons -->
 <div class="actions">
-  <button onclick="saveContact()">
-    <i class="fas fa-user-plus icon contact"></i><span>Save Contact</span>
-  </button>
-  <button onclick="downloadMenu()">
-    <i class="fas fa-file-download icon menu"></i><span>Download Menu</span>
-  </button>
-  <button onclick="shareWebsite()">
-    <i class="fas fa-share-alt icon share"></i><span>Share</span>
-  </button>
-  <button onclick="location.href='https://wa.me/919656384004'">
-    <i class="fab fa-whatsapp icon whatsapp"></i><span>WhatsApp</span>
-  </button>
-  <button onclick="location.href='tel:+919656384004'">
-    <i class="fas fa-phone icon phone"></i><span>Call Now</span>
-  </button>
-
+ 
+  <div class="tooltip">
+    <button onclick="downloadMenu()">
+      <i class="fas fa-file-download icon menu"></i>
+      <span class="tooltip-text">Download Menu</span>
+    </button>
+  </div>
+  <div class="tooltip">
+    <button onclick="shareWebsite()">
+      <i class="fas fa-share-alt icon share"></i>
+      <span class="tooltip-text">Share</span>
+    </button>
+  </div>
+   <div class="tooltip">
+    <button onclick="saveContact()">
+      <i class="fas fa-user-plus icon contact"></i>
+      <span class="tooltip-text">Save Contact</span>
+    </button>
+  </div>
+  <div class="tooltip">
+    <button onclick="location.href='https://wa.me/919656384004'">
+      <i class="fab fa-whatsapp icon whatsapp"></i>
+      <span class="tooltip-text">WhatsApp</span>
+    </button>
+  </div>
+  <div class="tooltip">
+    <button onclick="location.href='tel:+919656384004'">
+      <i class="fas fa-phone icon phone flip-icon"></i>
+      <span class="tooltip-text">Call Now</span>
+    </button>
+  </div>
+  
 </div>
+
 
   <!-- Menu Section -->
 <section class="menu-section">

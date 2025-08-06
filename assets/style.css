@@ -14,16 +14,57 @@ body {
 
 .actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
   background: #fff;
-  padding: 16px 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip button {
+  background: #f4f4f4;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip:active .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.flip-icon {
+  transform: rotate(90deg);
+}
+
 
 .actions button {
   background-color: #ffffff;
@@ -84,9 +125,9 @@ body {
 
 
 .menu-section {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  padding: 0; /* remove side padding */
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .menu-section h2 {
@@ -202,7 +243,7 @@ body {
 
 .menu-category-img {
   width: 100%;
-  max-height: 180px;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
