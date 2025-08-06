@@ -124,6 +124,10 @@
 </head>
 <body>
 <h2>Order Food to Home</h2>
+<div style="text-align:center; margin-bottom: 10px;">
+  <input type="text" id="searchInput" placeholder="Search for items..." oninput="filterMenu()" 
+         style="width: 80%; max-width: 400px; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+</div>
 
 <div class="container">
   <div class="menu-section">
@@ -142,23 +146,30 @@
 
 <script>
   const cart = [];
+let filteredProducts = [];
+function renderMenu() {
+  const menuEl = document.getElementById('menuItems');
+  menuEl.innerHTML = '';
 
-  function renderMenu() {
-    const menuEl = document.getElementById('menuItems');
+  const itemsToRender = filteredProducts.length ? filteredProducts : products;
 
-    products.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'menu-card';
-      card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" loading="lazy" />
-        <h4>${item.name}</h4>
-        <div class="menu-price">₹${(item.price).toFixed(2)}</div>
-        <button onclick="addToCart(${item.id}, this)">Add to Cart</button>
-      `;
-      menuEl.appendChild(card);
-    });
-  }
-
+  itemsToRender.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'menu-card';
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" loading="lazy" />
+      <h4>${item.name}</h4>
+      <div class="menu-price">₹${(item.price).toFixed(2)}</div>
+      <button onclick="addToCart(${item.id}, this)">Add to Cart</button>
+    `;
+    menuEl.appendChild(card);
+  });
+}
+function filterMenu() {
+  const searchValue = document.getElementById('searchInput').value.toLowerCase().trim();
+  filteredProducts = products.filter(item => item.name.toLowerCase().includes(searchValue));
+  renderMenu();
+}
   function addToCart(id, button) {
     const item = products.find(i => i.id === id);
     const existing = cart.find(c => c.id === id);
