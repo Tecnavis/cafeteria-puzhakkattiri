@@ -232,14 +232,14 @@ body {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
-/* Responsive for mobile: 2 items per row */
+/* Responsive for mobile: 3 items per row */
 @media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
