@@ -96,26 +96,6 @@ body {
   color: #333;
 }
 
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 in a row by default (mobile) */
-  gap: 10px;
-  padding: 0 10px; /* minimal side spacing */
-  margin-bottom: 30px;
-}
-
-@media (min-width: 640px) {
-  .menu-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 in a row for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .menu-grid {
-    grid-template-columns: repeat(5, 1fr); /* 5 in a row for desktop */
-  }
-}
-
 .menu-card {
   background: #fff;
   border-radius: 10px;
@@ -167,9 +147,6 @@ body {
   font-weight: bold;
 }
 
-.menu-tag.lunch { background: #fff6e0; color: #f9a825; }
-.menu-tag.beverages { background: #e0f7fa; color: #00796b; }
-.menu-tag.desserts { background: #fce4ec; color: #c2185b; }
 
 .menu-content h4 {
   margin: 0;
@@ -233,7 +210,7 @@ body {
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 
 /* Responsive for mobile: 3 items per row */
