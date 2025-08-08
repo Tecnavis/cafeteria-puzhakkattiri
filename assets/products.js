@@ -1,43 +1,10 @@
 const products = [
-  // Tea and Snacks
-  { id: 1, name: "Tea", price: 10, category: "Tea and Snacks", image: "../assets/mimages/1.png" },
-  { id: 2, name: "Coffee", price: 10, category: "Tea and Snacks", image: "../assets/mimages/2.png" },
-  { id: 3, name: "Boost", price: 15, category: "Tea and Snacks", image: "../assets/mimages/3.png" },
-  { id: 4, name: "Horlicks", price: 15, category: "Tea and Snacks", image: "../assets/mimages/4.png" },
-  { id: 5, name: "Chicken Sandwich", price: 30, category: "Tea and Snacks", image: "../assets/mimages/5.png" },
-  { id: 6, name: "Chicken Burger", price: 20, category: "Tea and Snacks", image: "../assets/mimages/6.png" },
-  { id: 7, name: "Chicken Puffs", price: 25, category: "Tea and Snacks", image: "../assets/mimages/7.png" },
-  { id: 8, name: "Egg Puffs", price: 20, category: "Tea and Snacks", image: "../assets/mimages/8.png" },
-  { id: 9, name: "Payampori", price: 10, category: "Tea and Snacks", image: "../assets/mimages/9.png" },
-  { id: 10, name: "Cutlet", price: 10, category: "Tea and Snacks", image: "../assets/mimages/10.png" },
-  { id: 11, name: "Samosa", price: 10, category: "Tea and Snacks", image: "../assets/mimages/11.png" },
-  { id: 12, name: "Pokkavada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/12.png" },
-  { id: 13, name: "Parippuvada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/13.png" },
-  { id: 14, name: "Ullivada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/14.png" },
-  { id: 15, name: "Kayabaji", price: 10, category: "Tea and Snacks", image: "../assets/mimages/15.png" },
-  { id: 16, name: "Mulakubaji", price: 10, category: "Tea and Snacks", image: "../assets/mimages/16.png" },
-
-  // Main Courses
-  { id: 17, name: "Shawarma Plate", price: 90, category: "Main Courses", image: "../assets/mimages/17.png" },
-  { id: 18, name: "Shawarma Roll", price: 70, category: "Main Courses", image: "../assets/mimages/18.png" },
-  { id: 19, name: "Mutabbaq", price: 100, category: "Main Courses", image: "../assets/mimages/19.png" },
-  { id: 20, name: "Mutta Parotta", price: 50, category: "Main Courses", image: "../assets/mimages/20.png" },
-  { id: 21, name: "Parotta", price: 10, category: "Main Courses", image: "../assets/mimages/21.png" },
-  { id: 22, name: "Kuboos", price: 10, category: "Main Courses", image: "../assets/mimages/22.png" },
-  { id: 23, name: "Kuboos (Small)", price: 5, category: "Main Courses", image: "../assets/mimages/23.png" },
-  { id: 24, name: "Dosa", price: 15, category: "Main Courses", image: "../assets/mimages/24.png" },
-  { id: 25, name: "Ghee Roast", price: 30, category: "Main Courses", image: "../assets/mimages/25.png" },
-  { id: 26, name: "Masala Dosa", price: 40, category: "Main Courses", image: "../assets/mimages/26.png" },
-  { id: 27, name: "Egg Roast", price: 50, category: "Main Courses", image: "../assets/mimages/27.png" },
-  { id: 28, name: "Egg Curry", price: 50, category: "Main Courses", image: "../assets/mimages/28.png" },
-  { id: 29, name: "Fish Curry", price: 50, category: "Main Courses", image: "../assets/mimages/29.png" },
-  { id: 30, name: "Kadala Curry", price: 50, category: "Main Courses", image: "../assets/mimages/30.png" },
-  { id: 31, name: "Beef Fry", price: 50, category: "Main Courses", image: "../assets/mimages/31.png" },
-  { id: 32, name: "Chilli Chicken", price: 50, category: "Main Courses", image: "../assets/mimages/32.png" },
 
   // Biriyani & Mandhi Combos
   { id: 33, name: "Chicken Biriyani (F)", price: 90, category: "Main Courses", image: "../assets/mimages/33.png" },
   { id: 34, name: "Chicken Biriyani (H)", price: 70, category: "Main Courses", image: "../assets/mimages/34.png" },
+  { id: 54, name: "Beef Biriyani (F)", price: 130, category: "Main Courses", image: "../assets/mimages/54.png" },
+  { id: 55, name: "Beef Biriyani (H)", price: 110, category: "Main Courses", image: "../assets/mimages/55.png" },
   { id: 35, name: "Mandhi Rice (Q)", price: 60, category: "Main Courses", image: "../assets/mimages/35.png" },
   { id: 36, name: "Chicken Pollichath (Q)", price: 100, category: "Main Courses", image: "../assets/mimages/36.png" },
   { id: 37, name: "Chicken Peri-Peri (Q)", price: 110, category: "Main Courses", image: "../assets/mimages/37.png" },
@@ -56,7 +23,45 @@ const products = [
   { id: 50, name: "Mandhi + Chicken Kanthari (F)", price: 600, category: "Main Courses", image: "../assets/mimages/50.png" },
   { id: 51, name: "Mandhi + Chicken Tawa (F)", price: 640, category: "Main Courses", image: "../assets/mimages/51.png" },
 
+
   // Party Orders
   { id: 52, name: "Chicken Biriyani (per kg)", price: 750, category: "Party Orders", image: "../assets/mimages/52.png" },
-  { id: 53, name: "Beef Biriyani (per kg)", price: 850, category: "Party Orders", image: "../assets/mimages/53.png" }
+  { id: 53, name: "Beef Biriyani (per kg)", price: 850, category: "Party Orders", image: "../assets/mimages/53.png" },
+
+
+    // Main Courses
+  { id: 17, name: "Shawarma Plate", price: 90, category: "Main Courses", image: "../assets/mimages/17.png" },
+  { id: 18, name: "Shawarma Roll", price: 70, category: "Main Courses", image: "../assets/mimages/18.png" },
+  { id: 19, name: "Mutabbaq", price: 100, category: "Main Courses", image: "../assets/mimages/19.png" },
+  { id: 20, name: "Mutta Parotta", price: 50, category: "Main Courses", image: "../assets/mimages/20.png" },
+  { id: 21, name: "Parotta", price: 10, category: "Main Courses", image: "../assets/mimages/21.png" },
+  { id: 22, name: "Kuboos", price: 10, category: "Main Courses", image: "../assets/mimages/22.png" },
+  { id: 23, name: "Kuboos (Small)", price: 5, category: "Main Courses", image: "../assets/mimages/23.png" },
+  { id: 24, name: "Dosa", price: 15, category: "Main Courses", image: "../assets/mimages/24.png" },
+  { id: 25, name: "Ghee Roast", price: 30, category: "Main Courses", image: "../assets/mimages/25.png" },
+  { id: 26, name: "Masala Dosa", price: 40, category: "Main Courses", image: "../assets/mimages/26.png" },
+  { id: 27, name: "Egg Roast", price: 50, category: "Main Courses", image: "../assets/mimages/27.png" },
+  { id: 28, name: "Egg Curry", price: 50, category: "Main Courses", image: "../assets/mimages/28.png" },
+  { id: 29, name: "Fish Curry", price: 50, category: "Main Courses", image: "../assets/mimages/29.png" },
+  { id: 30, name: "Kadala Curry", price: 50, category: "Main Courses", image: "../assets/mimages/30.png" },
+  { id: 31, name: "Beef Fry", price: 50, category: "Main Courses", image: "../assets/mimages/31.png" },
+  { id: 32, name: "Chilli Chicken", price: 50, category: "Main Courses", image: "../assets/mimages/32.png" },
+
+  // Tea and Snacks
+  { id: 1, name: "Tea", price: 10, category: "Tea and Snacks", image: "../assets/mimages/1.png" },
+  { id: 2, name: "Coffee", price: 10, category: "Tea and Snacks", image: "../assets/mimages/2.png" },
+  { id: 3, name: "Boost", price: 15, category: "Tea and Snacks", image: "../assets/mimages/3.png" },
+  { id: 4, name: "Horlicks", price: 15, category: "Tea and Snacks", image: "../assets/mimages/4.png" },
+  { id: 5, name: "Chicken Sandwich", price: 30, category: "Tea and Snacks", image: "../assets/mimages/5.png" },
+  { id: 6, name: "Chicken Burger", price: 20, category: "Tea and Snacks", image: "../assets/mimages/6.png" },
+  { id: 7, name: "Chicken Puffs", price: 25, category: "Tea and Snacks", image: "../assets/mimages/7.png" },
+  { id: 8, name: "Egg Puffs", price: 20, category: "Tea and Snacks", image: "../assets/mimages/8.png" },
+  { id: 9, name: "Payampori", price: 10, category: "Tea and Snacks", image: "../assets/mimages/9.png" },
+  { id: 10, name: "Cutlet", price: 10, category: "Tea and Snacks", image: "../assets/mimages/10.png" },
+  { id: 11, name: "Samosa", price: 10, category: "Tea and Snacks", image: "../assets/mimages/11.png" },
+  { id: 12, name: "Pokkavada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/12.png" },
+  { id: 13, name: "Parippuvada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/13.png" },
+  { id: 14, name: "Ullivada", price: 10, category: "Tea and Snacks", image: "../assets/mimages/14.png" },
+  { id: 15, name: "Kayabaji", price: 10, category: "Tea and Snacks", image: "../assets/mimages/15.png" },
+  { id: 16, name: "Mulakubaji", price: 10, category: "Tea and Snacks", image: "../assets/mimages/16.png" }
 ];
